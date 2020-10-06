@@ -24,19 +24,17 @@ inputSpacing.addEventListener("input", changeSpacing);
 changeSpacing();
 
 // ========== Padding ==========
-const inputPadding = [
-        document.getElementById("input-padding-1"), 
-        document.getElementById("input-padding-2"), 
-        document.getElementById("input-padding-3"), 
-        document.getElementById("input-padding-4")
-    ];
+const inputPadding = [];
+for (let i = 0; i < 4; i++) { 
+    inputPadding[i] = document.getElementById(`input-padding-${i+1}`);
+}
 const showPadding = document.getElementById("show-padding");
 function changePadding() {
-    const paddingValues = []
+    let padding = "";
     for (let i = 0; i < inputPadding.length; i++) {
-        paddingValues[i] = inputPadding[i].value;
+        padding += `${inputPadding[i].value}px ` ;
     }
-    const padding = `${paddingValues[0]}px ${paddingValues[1]}px ${paddingValues[2]}px ${paddingValues[3]}px`;
+    padding = padding.slice(0, -1);
     display.style.padding = padding;
     showPadding.innerText = padding;
 }
