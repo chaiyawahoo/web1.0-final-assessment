@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chaiyawat Nunes - Final - Web 1.0</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="column-1">
+            <div id="student-info">
+                <h1>Chaiyawat Nunes</h1>
+                <p>My favorite color is blue and I wear Vans.</p>
+            </div>
+            <div id="data-input">
+                <h1>Font Styler</h1>
+                <label>
+                    Font Size
+                    <br>
+                    <input type="number" name="input-size" id="input-size" value="16"></input>
+                </label>
+                <label>
+                    Letter Spacing
+                    <br>
+                    <input type="number" name="input-spacing" id="input-spacing" value="0"></input>
+                </label>
+                <label id="padding">
+                    Padding
+                    <br>
+                    <input type="number" name="input-padding-1" id="input-padding-1" value="0"></input>
+                    <input type="number" name="input-padding-2" id="input-padding-2" value="0"></input>
+                    <input type="number" name="input-padding-3" id="input-padding-3" value="0"></input>
+                    <input type="number" name="input-padding-4" id="input-padding-4" value="0"></input>
+                </label>
+                <label>
+                    Font Family
+                    <br>
+                    <select name="select-font" id="select-font">
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Times">Times New Roman</option>
+                        <option value="Georgia">Georgia</option>
+                    </select>
+                </label>
+                <label>
+                    Font Weight
+                    <br>
+                    <select name="select-weight" id="select-weight">
+                        <option value="normal">normal</option>
+                        <option value="bold">bold</option>
+                        <option value="bolder">bolder</option>
+                        <option value="lighter">lighter</option>
+                    </select>
+                </label>
+                <label>
+                    Font Style
+                    <br>
+                    <select name="select-style" id="select-style">
+                        <option value="normal">normal</option>
+                        <option value="italic">italic</option>
+                        <option value="oblique">oblique</option>
+                    </select>
+                </label>
+                <label>
+                    Font Color
+                    <br>
+                    <input type="color" name="input-color" id="input-color" value="#000000"></input>
+                </label>
+                <label>
+                    Background Color
+                    <br>
+                    <input type="color" name="input-bg-color" id="input-bg-color" value="#ffffff"></input>
+                </label>
+                <label>
+                    Enter Text
+                    <br>
+                    <textarea name="enter-text" id="enter-text">Sample Text</textarea>
+                </label>
+            </div>
+        </section>
+        <section id="column-2">
+            <div id="headline-display">
+                <h1 id="display">Sample Text</h1>
+            </div>
+            <div id="data-output">
+                <h1>Font Settings</h1>
+                <pre>
+                    <code>
+<span class="code-id">#display</span> {
+    <span class="code-attribute">font-size</span>: <span class="code-value"><span id="show-size"></span>px</span>;
+    <span class="code-attribute">letter-spacing</span>: <span class="code-value"><span id="show-spacing"></span>px</span>;
+    <span class="code-attribute">padding</span>: <span class="code-value"><span id="show-padding"></span></span>;
+    <span class="code-attribute">font-family</span>: <span id="show-font" class="code-value"></span>;
+    <span class="code-attribute">font-weight</span>: <span id="show-weight" class="code-value"></span>;
+    <span class="code-attribute">font-style</span>: <span id="show-style" class="code-value"></span>;
+    <span class="code-attribute">color</span>: <span id="show-color" class="code-value"></span>;
+    <span class="code-attribute">background-color</span>: <span id="show-bg-color" class="code-value"></span>;
+}
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
