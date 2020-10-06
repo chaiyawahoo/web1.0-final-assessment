@@ -73,7 +73,7 @@ const showStyle = document.getElementById("show-style");
 function changeStyle() {
     const fontStyle = selectStyle.value;
     display.style.fontStyle = fontStyle;
-    showWeight.innerText = fontStyle;
+    showStyle.innerText = fontStyle;
 }
 selectStyle.addEventListener("change", changeStyle);
 changeStyle();
